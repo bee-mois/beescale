@@ -240,7 +240,7 @@ String getTimeStamp()
   // date is a command line utility to get the date and the time
   // in different formats depending on the additional parameter
   time.begin("date");
-  time.addParameter("+%F %T");  
+  time.addParameter("+%Y/%m/%d %T");  
   time.run();  // run the command
   // read the output of the command
   while (time.available() > 0) {
