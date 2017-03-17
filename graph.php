@@ -338,8 +338,8 @@
 <p><b>Aktualisierung:</b> In der Regel kommt alle 2 Minuten ein aktueller Wert automatisch zur <a href="sensorik.csv">Datenbasis</a> hinzu. Zum Aktualisieren der Kurve den Reload-Button des Browsers klicken oder die Tastenkombination Strg/Cmd+"r"!<br>
 <b>Update:</b> The <a href="sensorik.csv">database</a> is automatically updated every 2 minutes. To update the chart, click the update button of your browser or the reload hotkey, commonly string/cmd+r!
 	<br>
-	<p><a href="http://wbk.in-berlin.de/wp/blog/2014/06/bienenwaage-testbetrieb/">Wie das im einzelnen funktioniert</a> und mehr im Projektblog unter <a href="http://wbk.in-berlin.de/wp/blog/series/bienenwaage/">"Bienenwaage"</a>.
-	<br>Find out <a href="http://wbk.in-berlin.de/wp/blog/2014/06/bienenwaage-testbetrieb/">how this is done</a> and more in the bee scale's project blog filed under <a href="http://wbk.in-berlin.de/wp/blog/series/bienenwaage/">"Bienenwaage"</a> (sorry, only in German).<br><a name="remarks">
+	<p><a href="http://wbk.in-berlin.de/wp/blog/2014/06/bienenwaage-testbetrieb/">Wie das im einzelnen funktioniert</a> und mehr im Projektblog unter <a href="http://wbk.in-berlin.de/wp/blog/series/bienenwaage/">"Bienenwaage"</a>. Alle Dateien auf <a href="https://github.com/bee-mois/beescale">GitHub</a>.
+	<br>Find out <a href="http://wbk.in-berlin.de/wp/blog/2014/06/bienenwaage-testbetrieb/">how this is done</a> and more in the bee scale's project blog filed under <a href="http://wbk.in-berlin.de/wp/blog/series/bienenwaage/">"Bienenwaage"</a> (sorry, only in German). All files at <a href="https://github.com/bee-mois/beescale">GitHub</a>.<br><a name="remarks">
 <br>
 <br>
 <p><small><center><b>Links</b><br>
