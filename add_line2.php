@@ -21,29 +21,29 @@ $datei_pure = fopen("sensorik_pure.csv","a+") or die("Kann die Datei nicht aufma
 	$oldlines = @file("sensorik.csv");
 	$oldline = (count($oldlines)) ? $oldlines[count($oldlines)-1] : NULL;
 	$array_oldline = explode(",",$oldline);	# letzte datenzeile am komma auftrennen und in array speichern
-	$oldlux = $array_oldline[4];			# letzte helligkeit einlesen
-$date = date('Y/m/d H:i:s'); 				# serverzeitstempel abgreifen
+	$oldlux = $array_oldline[4];		# letzte helligkeit einlesen
+$date = date('Y/m/d H:i:s'); 			# serverzeitstempel abgreifen
 $kiste1 = round($_GET["weight1"], 2);		# variable aus der url einlesen
-$temp = round($_GET["temp1"], 1);			# outside
+$temp = round($_GET["temp1"], 1);		# outside
 $vcc = $_GET["vcc"];
 $v = $vcc/1000;
 $l = $_GET["lux"];
-if ($l >= 65530 && $l <= 65545)				# auf ausreißer prüfen
+if ($l >= 65530 && $l <= 65545)			# auf ausreißer prüfen
 	{  $l = $oldlux;	}
-//	   $lux = $l * 0.1;						# darstellungsgruende: lux-kurve um faktor 10 gestaucht
-$lux = round(sqrt($l), 2);			# darstellungsgruende: lux-kurve in quadratwurzel gestaucht
+//	   $lux = $l * 0.1;			# darstellungsgruende: lux-kurve um faktor 10 gestaucht
+$lux = 0.5 * round(sqrt($l), 2);		# darstellungsgruende: lux-kurve in quadratwurzel gestaucht und halbiert
 $kiste2 = round($_GET["weight2"], 2);
-$temp01 = round($_GET["temp2"], 1);			# inside
+$temp01 = round($_GET["temp2"], 1);		# inside
 $h1 = $_GET["h1"];
 $t1 = $_GET["t1"];
 $h2 = $_GET["h2"];
 $t2 = $_GET["t2"];
 $line = "\n".$date.",".$kiste1.",".$temp.",".$v.",".$lux.",".$kiste2.",".$temp01.",".$h1.",".$t1.",".$h2.",".$t2;	#datensatz zusammenstellen
 $line_pure = "\n".$date.",".$kiste1.",".$temp.",".$v.",".$l.",".$kiste2.",".$temp01.",".$h1.",".$t1.",".$h2.",".$t2;
-fwrite($datei_pure, $line_pure);			# unbereinigte daten in sensorik_pure.csv schreiben
+fwrite($datei_pure, $line_pure);		# unbereinigte daten in sensorik_pure.csv schreiben
 fwrite($datei, $line);	
-echo $date,": addline2.php returns: OK\r\n";# ...und gespeichert.
-fclose($datei);								# datei mit datenreihe schliessen
+echo $date,": addline2.php returns: OK\r\n";	# ...und gespeichert.
+fclose($datei);					# datei mit datenreihe schliessen
 fclose($datei_pure);
 # Transmit dataset to hiveeyes
 $data = array("weight hive1" => $kiste1, "temperature hive1" => $t1, "humidity hive1" => $h1, "weight hive2" => $kiste2, "temperature hive2" => $t2, "humidity hive2" => $h2, "temperature outside" => $temp, "temperature inside" => $temp01, "brightness" => $lux);
