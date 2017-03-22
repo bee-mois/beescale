@@ -49,6 +49,6 @@ fclose($datei_pure);
 $data = array("weight hive1" => $kiste1, "temperature hive1" => $t1, "humidity hive1" => $h1, "weight hive2" => $kiste2, "temperature hive2" => $t2, "humidity hive2" => $h2, "temperature outside" => $temp, "temperature inside" => $temp01, "brightness" => $lux);
 $telemetry->transmit($data);
 # fetch latest image from beecam
-exec("wget https://wbk.in-vpn.de/sd/webcam/latest.jpg -O latest.jpg");
+exec("wget http://wbk.in-vpn.de/sd/webcam/latest.jpg -O latest.jpg");
 echo "latest.jpg downloaded.\r\n";
 ?>
