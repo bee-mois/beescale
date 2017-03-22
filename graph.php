@@ -41,6 +41,7 @@
 <body>
 <header> 
 	<a href="https://www.euse.de/wp/wp-content/uploads/2017/02/p1080858.jpeg"><image src="https://www.euse.de/wp/wp-content/uploads/2017/02/p1080858-150x150.jpeg" align="left" width="110" border="1"></a>
+	<a href="http://www.euse.de/honig/beescale/latest.jpg"><image src="http://www.euse.de/honig/beescale/latest.jpg" align="right" height="107" border="1" alt="reload after a couple minutes" title="latest image from beecam"></a>
 	<h3>Bienenstockwaage - Bee Hive Scale  ** Probebetrieb indoor mit Testgewicht **</h3>
 	<small><?php
   $intervall = 2;  # aktueller wert des cronjobs zur datenerfassung (in minuten)
