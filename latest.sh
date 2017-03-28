@@ -1,4 +1,6 @@
 #!/bin/sh
+# run by cron with crontab -e entry
+# */15 * * * * /home/www/wbk/euse.de/honig/beescale/latest.sh >/dev/null 2>&1
 cd /home/www/wbk/euse.de/honig/beescale
 wget wget.log http://wbk.in-vpn.de/sd/[path to webcam folder]/latest.jpg -O latest_new.jpg
 if [ cmp -s latest.jpg latest_new.jpg ] ; then
