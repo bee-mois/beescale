@@ -4,7 +4,10 @@ This is the place to collect my scripts for the <a href="http://www.euse.de/honi
 
 <h3>Content</h3>
 <ul>
-<li>Folder OpenWrt: config-files of <a href="http://www.dragino.com/products/yunshield/item/105-yun-shield-v2-4.html">dragino yun shield's</a> linux component running openwrt (to come!)
+<li>Folder OpenWrt: config and other custom beescale files of <a href="http://www.dragino.com/products/yunshield/item/105-yun-shield-v2-4.html">dragino yun shield's</a> linux component running openwrt (more to come!)
+    <ul>
+    <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/latest.sh">latest.sh</a>: shell script, that produces latest.jpg from most recent date-stamp-named-snapshot of usb webcam driven by mjpg_streamer 
+    </ul>
 <li><a href="https://github.com/bee-mois/beescale/blob/master/beescale-yun-ds18b20-two_load_cells-dht22-switch-sd-lux-lite">beescale-yun-ds18b20-two_load_cells-dht22-switch-sd-lux-lite</a>: arduino yun firmware/"sketch").
 <li><a href="https://github.com/bee-mois/beescale/blob/master/add_line2.php">add_line2.php</a>: collects data and writes to databases.
 <li><a href="https://github.com/bee-mois/beescale/blob/master/graph.php">graph.php</a>: creates visible representations (charts) based on <a href="http://dygraphs.com/">dygraphs</a> js-framework.
