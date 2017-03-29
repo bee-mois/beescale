@@ -6,7 +6,8 @@ This is the place to collect my scripts for the <a href="http://www.euse.de/honi
 <ul>
 <li>Folder OpenWrt: config and other custom beescale files of <a href="http://www.dragino.com/products/yunshield/item/105-yun-shield-v2-4.html">dragino yun shield's</a> linux component running openwrt (more to come!)
     <ul>
-    <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/latest.sh">latest.sh</a>: shell script, that produces latest.jpg from most recent date-stamp-named-snapshot of usb webcam driven by mjpg_streamer 
+    <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/latest.sh">latest.sh</a>: shell script that produces latest.jpg from most recent date-stamp-named-snapshot of usb webcam driven by mjpg_streamer. 
+    <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/wan-watchdog.sh">wan-watchdog.sh</a>: shell script that checks connection from yun to web server and restarts connections if necessary. run by yun's cron.
     </ul>
 <li><a href="https://github.com/bee-mois/beescale/blob/master/beescale-yun-ds18b20-two_load_cells-dht22-switch-sd-lux-lite">beescale-yun-ds18b20-two_load_cells-dht22-switch-sd-lux-lite</a>: arduino yun firmware/"sketch").
 <li><a href="https://github.com/bee-mois/beescale/blob/master/add_line2.php">add_line2.php</a>: collects data and writes to databases.
