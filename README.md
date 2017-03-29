@@ -1,6 +1,6 @@
 # beescale
 
-This is the place to collect my scripts for the <a href="http://www.euse.de/honig/beescale/graph.php">beescale</a>, that are not (yet) incorporatet into <a href="https://github.com/hiveeyes/arduino">hiveeyes</a>.
+This is the place to collect my scripts for the <a href="http://www.euse.de/honig/beescale/graph.php">beescale</a>, that are not (yet) incorporatet into <a href="https://github.com/hiveeyes/arduino">hiveeyes</a>. For more prose about the beescale <a href="http://www.euse.de/wp/blog/series/bienenwaage2/">see the blog</a> (only in German language).
 
 <h3>Content</h3>
 <ul>
