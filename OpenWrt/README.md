@@ -35,3 +35,4 @@ This is the auto generated list of changed configuration files:
 <li>/etc/tor/torrc
 <li>/etc/config/uhttpd
 </pre>
+Files will be added peu-a-peu. Don't bother to let me know if you are particularly interested in a file not linked yet.
