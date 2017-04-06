@@ -51,7 +51,7 @@ echo $date,": addline2.php returns: OK\r\n";# ...und gespeichert.
 fclose($datei);								# datei mit datenreihe schliessen
 fclose($datei_pure);
 # Transmit dataset to hiveeyes
-$data = array("weight hive1" => $kiste1, "temperature hive1" => $t1, "humidity hive1" => $h1, "weight hive2" => $kiste2, "temperature hive2" => $t2, "humidity hive2" => $h2, "temperature outside" => $temp, "temperature inside" => $temp01, "brightness" => $lux);
+$data = array("weight hive1" => $kiste1, "temperature hive1" => $t1, "humidity hive1" => $h1, "weight hive2" => $kiste2, "temperature hive2" => $t2, "humidity hive2" => $h2, "temperature outside" => $temp, "temperature inside" => $temp01, "brightness" => $l);
 $telemetry->transmit($data);
 // latestJPG();
 ?>
