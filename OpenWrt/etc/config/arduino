@@ -1,0 +1,22 @@
+
+config arduino
+	option secure_rest_api 'true'
+	option password 'ec26b25af2a498f77....................9e050f48b0662c254682959d7e6'
+	option wifi_reset_step 'clear'
+
+config wifi-device 'radio0'
+	option channel 'auto'
+	option country 'DE'
+
+config wifi-iface
+	option mode 'sta'
+	option encryption 'psk2'
+	option key '...'
+	option ssid '...'
+
+config interface 'lan'
+	option proto 'dhcp'
+
+config settings 'mcu'
+	option board 'leonardo'
+	option upload_bootloader 'enable'
