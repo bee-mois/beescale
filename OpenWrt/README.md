@@ -7,32 +7,32 @@ Linux version 3.3.8 (dragino@iZ28vl6w7rcZ) (gcc version 4.6.3 20120201 (prerelea
 This is the auto generated list of changed configuration files:
 <pre>:~$ sudo opkg list-changed-conffiles
 <ol>
-<li>/etc/avahi/avahi-daemon.conf
-<li>/etc/avrdude.conf
-<li>/etc/inittab
-<li>/etc/group
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/avahi/avahi-daemon.conf">/etc/avahi/avahi-daemon.conf</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/avrdude.conf">/etc/avrdude.conf</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/inittab">/etc/inittab</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/group">/etc/group</a>
 <li>/etc/passwd
 <li>/etc/shadow
-<li>/etc/profile
-<li>/etc/sysctl.conf
-<li>/etc/rc.local
-<li>/etc/config/system
-<li>/etc/config/fstab
-<li>/etc/dbus-1/session.conf
-<li>/etc/dbus-1/system.conf
-<li>/etc/config/ddns
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/profile">/etc/profile</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/sysctl.conf">/etc/sysctl.conf</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/rc.local">/etc/rc.local</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/system">/etc/config/system</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/fstab">/etc/config/fstab</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/dbus-1/session.conf">/etc/dbus-1/session.conf</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/dbus-1/system.conf">/etc/dbus-1/system.conf</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/ddns">/etc/config/ddns</a>
 <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/dhcp">/etc/config/dhcp</a>
-<li>/etc/config/arduino
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/arduino">/etc/config/arduino</a>
 <li>/etc/dropbear/dropbear_rsa_host_key
 <li>/etc/dropbear/dropbear_dss_host_key
-<li>/etc/config/dropbear
-<li>/etc/config/firewall
-<li>/etc/config/luci
-<li>/etc/config/olsrd
-<li>/etc/config/openvpn
-<li>/etc/opkg.conf
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/dropbear">/etc/config/dropbear</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/firewall">/etc/config/firewall</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/luci">/etc/config/luci</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/olsrd">/etc/config/olsrd</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/openvpn">/etc/config/openvpn</a>
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/opkg.conf">/etc/opkg.conf</a>
 <li>/etc/sudoers
 <li>/etc/tor/torrc
-<li>/etc/config/uhttpd
+<li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/uhttpd">/etc/config/uhttpd</a>
 </pre>
 Files will be added peu-a-peu. Don't bother to let me know if you are particularly interested in a file not linked yet.
