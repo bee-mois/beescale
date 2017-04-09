@@ -1,0 +1,10 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+
+/usr/sbin/openvpn --cd /etc/openvpn --daemon --config /etc/openvpn/in-berlin-vpn.conf
+# stream camera image
+# mjpg_streamer -i "input_uvc.so -d /dev/video0 -resolution 640x480 -y" -o "output_http.so -p 8070 -c test:test -www /mnt/sda1/arduino/www/webcam"
+# write jpg to sd every 15' 
+# mjpg_streamer -i "input_uvc.so -d /dev/video0 -r 320x240 -q 70 -y" -o "output_file.so -f /mnt/sda1/arduino/www/webcam/ -d 900000 -s 1000000 -c /root/latest.sh"
+
+exit 0
