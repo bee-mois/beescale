@@ -1,0 +1,29 @@
+
+config system
+	option key 'a2267e58061.......d43a930c1f4a32'
+	option device '73b9b5a0.......e7cd140f551744eb3'
+	option firstboot '0'
+	option hostname 'dragino'
+	option timezone 'CET-1CEST,M3.5.0,M10.5.0/3'
+	option timezone_desc 'Europe/Berlin'
+	option zonename 'Europe/Berlin'
+	option conloglevel '8'
+	option cronloglevel '8'
+
+config timeserver 'ntp'
+	list server '0.openwrt.pool.ntp.org'
+	list server '1.openwrt.pool.ntp.org'
+	list server '2.openwrt.pool.ntp.org'
+	list server '3.openwrt.pool.ntp.org'
+
+config led
+	option default '0'
+	option name 'wlan'
+	option sysfs 'ds:green:wlan'
+	option trigger 'phy0tpt'
+
+config oem 'vendor'
+	option name 'Dragino'
+	option ssid_prefix 'Dragino'
+	option hostname 'dragino'
+	option web_model 'Dragino Yun'
