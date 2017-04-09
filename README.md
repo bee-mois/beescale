@@ -9,7 +9,7 @@ This is the place to collect my scripts for the <a href="http://www.euse.de/honi
     <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/latest.sh">latest.sh</a>: shell script that produces latest.jpg from most recent date-stamp-named-snapshot of usb webcam driven by mjpg_streamer. 
     <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/wan-watchdog.sh">wan-watchdog.sh</a>: shell script that checks connection from yun to web server and restarts connections if necessary. run by yun's cron.
     </ul>
-<li><a href="https://github.com/bee-mois/beescale/blob/master/beescale-yun-ds18b20-two_load_cells-dht22-switch-sd-lux-lite">beescale-yun-ds18b20-two_load_cells-dht22-switch-sd-lux-lite</a>: arduino yun firmware/"sketch").
+<li>beescale-yun-ds18b20-two_load_cells-dht22-switch-sd-lux-lite: arduino yun firmware/"sketch". Better get it from the hiveeyes repo: <a href="https://github.com/hiveeyes/arduino/tree/master/node-yun-http">node-yun-http.ino</a>
 <li><a href="https://github.com/bee-mois/beescale/blob/master/add_line2.php">add_line2.php</a>: collects data and writes to databases.
 <li><a href="https://github.com/bee-mois/beescale/blob/master/graph.php">graph.php</a>: creates visible representations (charts) based on <a href="http://dygraphs.com/">dygraphs</a> js-framework.
 <li><a href="https://github.com/bee-mois/beescale/blob/master/graph_pure.php">graph_pure.php</a>: creates visible representation (charts) with the raw data, no spikes eliminated, based on <a href="http://dygraphs.com/">dygraphs</a> js-framework.
