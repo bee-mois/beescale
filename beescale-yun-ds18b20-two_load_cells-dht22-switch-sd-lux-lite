@@ -1,4 +1,7 @@
 /*
+THIS FILE IS ONLY HERE FOR HISTORICAL REASONS.
+FOR RUNNING A SENSOR NODE USE THE <a href="https://github.com/hiveeyes/arduino/tree/master/node-yun-http">ACTIVELY MAINTAINED VERSION OF THIS FILE</a> AT HIVEEYES!
+
   Yun Open Bee Hive Scale GET-Sketch
   2015-01 by mois, more: http://wbk.in-berlin.de/wp/blog/series/bienenwaage/
   2015-03 modified by Alexander Wilms
