@@ -4,7 +4,7 @@
 # Bee Hive Scale add_line2.php by mois is licensed under a Creative Commons 
 # Attribution-NonCommercial-ShareAlike 4.0 International License.
 #
-include("hiveeyes.php");
+include("hiveeyes.php");	# download at https://hiveeyes.org/docs/system/_downloads/
 use Hiveeyes\HiveeyesNode;
 # Create a "Node API" telemetry client object
 $telemetry = new HiveeyesNode(
