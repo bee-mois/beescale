@@ -34,6 +34,8 @@ $temp = round($_GET["temp1"], 1);			# outside
 $vcc = $_GET["vcc"];
 $v = $vcc/1000;
 $l = $_GET["lux"];
+if ($kiste1 > 0)					# auf nuller prüfen
+{
 if ($l > 65380 && $l < 65546)				# auf ausreißer prüfen
 	{  $l = $oldlux;	}
 //	   $lux = $l * 0.1;						# darstellungsgruende: lux-kurve um faktor 10 gestaucht
@@ -55,4 +57,5 @@ fclose($datei_pure);
 $data = array("weight hive1" => $kiste1, "temperature hive1" => $t1, "humidity hive1" => $h1, "weight hive2" => $kiste2, "temperature hive2" => $t2, "humidity hive2" => $h2, "temperature outside" => $temp, "temperature inside" => $temp01, "brightness" => $l);
 $telemetry->transmit($data);
 // latestJPG();
+}
 ?>
