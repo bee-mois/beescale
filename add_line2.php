@@ -34,9 +34,9 @@ $temp = round($_GET["temp1"], 1);			# outside
 $vcc = $_GET["vcc"];
 $v = $vcc/1000;
 $l = $_GET["lux"];
-if ($kiste1 > 0)					# auf nuller prüfen
+if ($kiste1 > 0 && $temp < 60)				# auf gewichts- und temmperaturausreißer prüfen
 {
-if ($l > 65380 && $l < 65546)				# auf ausreißer prüfen
+if ($l > 65380 && $l < 65546)				# auf lichtausreißer prüfen
 	{  $l = $oldlux;	}
 //	   $lux = $l * 0.1;						# darstellungsgruende: lux-kurve um faktor 10 gestaucht
 $lux = 0.5 * round(sqrt($l), 2);			# darstellungsgruende: lux-kurve in quadratwurzel gestaucht und halbiert
