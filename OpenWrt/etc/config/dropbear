@@ -1,17 +1,21 @@
-
 config dropbear
-	option PasswordAuth 'on'
-	option Port '2233'
-	option Interface 'IN_VPN'
-	option RootPasswordAuth 'off'
-
-config dropbear
-	option Port '22'
-	option PasswordAuth 'on'
-	option GatewayPorts 'on'
-	option Interface 'wan'
-
-config dropbear
-	option Port '22'
 	option PasswordAuth 'on'
 	option Interface 'lan'
+	option Port '2233'
+
+config dropbear
+	option PasswordAuth 'on'
+	option Interface 'vpn'
+	option Port '2233'
+	option RootPasswordAuth 'off'
+	option GatewayPorts 'on'
+
+config dropbear
+	option PasswordAuth 'on'
+	option Interface 'wwan'
+	option Port '2233'
+
+config dropbear
+	option PasswordAuth 'on'
+	option Interface 'wan1'
+	option Port '2233'
