@@ -286,7 +286,7 @@ void setup()
   FileSystem.begin();
   // a second to initialize:
   delay(1000);
-  while (!Console);   // Wait for the Console port to connect
+  // while (!Console);   // Wait for the Console port to connect
   Console.println(F("-----type H or L to turn pinA0/D14/USB/camera off or on----"));  // relay info
   pinMode(RelayPin, OUTPUT);   // initialize the relay pin as an output
   // load cell / ADS1231 pin definition: SCL 7, Data 6, PowerDown 10
