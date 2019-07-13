@@ -4,11 +4,11 @@ config dropbear
 	option Port '2233'
 
 config dropbear
-	option PasswordAuth 'on'
 	option Interface 'vpn'
 	option Port '2233'
 	option RootPasswordAuth 'off'
 	option GatewayPorts 'on'
+	option PasswordAuth 'off'
 
 config dropbear
 	option PasswordAuth 'on'
