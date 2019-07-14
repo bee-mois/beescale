@@ -1,6 +1,6 @@
 This folder contains all OpenWrt files and config files that were changed to run the Yun part of the sensor node to connect via GSM, establish and connect with an OpenVPN client, provide local wireless access and send beecam images to the web server every 15 minutes.
 
-Dragino yun firmware version is <a href="http://www.dragino.com/downloads/downloads/motherboards/ms14/Firmware/Yun/Legacy_Firmware/common-build--v2.0.7--20151124-1949/">common-build--v2.0.7--20151124-1949</a>.
+Dragino yun firmware version is <a href="http://www.dragino.com/downloads/downloads/motherboards/ms14/Firmware/Yun/Legacy_Firmware/common-build--v2.0.7--20151124-1949/">common-build--v2.0.7--20151124-1949</a>. (Newest firmware  <a href="http://www.dragino.com/downloads/index.php?dir=motherboards/ms14/Firmware/Yun/Newest_Firmware/yun--build-v4.1.2-20170221-2213/">yun--build-v4.1.2-20170221-2213</a> won't work without recompiling: There are unresolvable dependencies - kernel-version - with the openvpn package <a href="http://www.dragino.com/downloads/index.php?dir=motherboards/ms14/Firmware/Yun/Packages--v2.x/&file=openvpn_2.2.2-2_ar71xx.ipk">openvpn_2.2.2-2_ar71xx.ipk</a> in Dragino's repo.)
 
 <pre>:~$ cat /proc/version 
 Linux version 3.3.8 (dragino@iZ28vl6w7rcZ) (gcc version 4.6.3 20120201 (prerelease) (Linaro GCC 4.6-2012.02) ) #2 Tue Nov 24 15:51:41 CST 2015</pre>
