@@ -32,4 +32,6 @@ This is the auto generated list of changed configuration files:
 <li>/etc/sudoers
 <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/uhttpd">/etc/config/uhttpd</a>
 </pre>
+Strangely missing in this list:
+<pre><li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/etc/config/network">/etc/config/network</a></pre>
 Files will be added peu-a-peu. Don't bother to let me know if you are particularly interested in a file not linked yet.
