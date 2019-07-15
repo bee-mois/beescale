@@ -14,6 +14,6 @@ do
     tries=$((tries+1))
 done
 #echo "offline. going to restart..."
-(ifdown congstar ; sleep 2) ; (killall openvpn ; sleep 3) ; (ifdown wan1 ; sleep 3) ; (ifup congstar ; sleep 10) ; ifup wan1 && openvpn --config /etc/openvpn/in-berlin-vpn.conf
-# ifdown wan1 ; (ifdown congstar ; sleep 2) ; (ifup congstar ; sleep 10) ; (killall openvpn ; sleep 3) ; openvpn --config /etc/openvpn/in-berlin-vpn.conf & ifup wan1
+(ifdown wwan ; sleep 2) ; (killall openvpn ; sleep 3) ; (ifdown wan ; sleep 3) ; (ifup wwan ; sleep 10) ; ifup wan && openvpn --config /etc/openvpn/in-berlin-vpn.conf
+# (ifdown congstar ; sleep 2) ; (killall openvpn ; sleep 3) ; (ifdown wan1 ; sleep 3) ; (ifup congstar ; sleep 10) ; ifup wan1 && openvpn --config /etc/openvpn/in-berlin-vpn.conf
 # /etc/init.d/network restart
