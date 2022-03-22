@@ -19,7 +19,7 @@
   2019-06-16 mois  - added code to swich on/off USB-power by a relay on pinA0/D14
   2020-10-05 mois  - added code to check t2 and correct via relay if necessary.
                    - commented out other relay stuff.
-  2022-03-15 mois  - replaced DHT22 by SHT31. 
+  2022-03-15 mois  - replaced DHT22 by SHT30. 
                    - therefore had to add an i2c multiplexer TCA9548A.
                    - wrapped TSL2591 stuff in multiplexer code.
                    - removed relay which had to reset one of the dht22.
@@ -46,10 +46,10 @@ long loadCellKgDivider01 = 3800000;
 // initialize all needed variables
 float temp1;   // Temp outside box
 float temp2;   // Temp in box
-float h1;      // SHT31 Humidity Hive1, connect sensor pins to I2C bus number 1 on multiplexer
-float t1;      // SHT31 Temperature Hive1, -"-
-float h2;      // SHT31 Humidity Hive2, connect sensor pins to I2C bus number 2 on multiplexer
-float t2;      // SHT31 Temperature Hive2, -"-
+float h1;      // SHT30 Humidity Hive1, connect sensor pins to I2C bus number 1 on multiplexer
+float t1;      // SHT30 Temperature Hive1, -"-
+float h2;      // SHT30 Humidity Hive2, connect sensor pins to I2C bus number 2 on multiplexer
+float t2;      // SHT30 Temperature Hive2, -"-
 float weight1;
 long weightSensorValue;
 float weightKg;
