@@ -12,7 +12,8 @@ The data source is a sensor node consisting of an [Arduino Uno](https://www.ardu
     <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/latest.sh">latest.sh</a>: shell script that produces latest.jpg from most recent date-stamp-named-snapshot of usb webcam driven by mjpg_streamer. 
     <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/wan-watchdog.sh">wan-watchdog.sh</a>: shell script that checks connection from yun to web server and restarts connections if necessary. run by yun's cron.
     </ul>
-<li>beescale-yun-ds18b20-two_load_cells-dht22-switch-sd-lux-lite: arduino yun firmware/"sketch". Better get it from the hiveeyes repo: <a href="https://github.com/hiveeyes/arduino/tree/master/node-yun-http">node-yun-http.ino</a>
+<li>beescale-yun-2022: arduino yun firmware/"sketch". Better get it from the hiveeyes repo: <a href="https://github.com/hiveeyes/arduino/tree/master/node-yun-http">node-yun-http.ino</a>   
+<li>beescale-yun-ds18b20-two_load_cells-dht22-switch-sd-lux-lite: old arduino yun firmware/"sketch" with DHT22 and an ugly hardware workaround based on a relay to reset a sensor pin if that blocks the sketch. kept only for historical reasons.
 <li><a href="https://github.com/bee-mois/beescale/blob/master/add_line2.php">add_line2.php</a>: collects data and writes to databases.
 <li><a href="https://github.com/bee-mois/beescale/blob/master/graph.php">graph.php</a>: creates visible representations (charts) based on <a href="http://dygraphs.com/">dygraphs</a> js-framework.
 <li><a href="https://github.com/bee-mois/beescale/blob/master/graph_pure.php">graph_pure.php</a>: creates visible representation (charts) with the raw data, no spikes eliminated, based on <a href="http://dygraphs.com/">dygraphs</a> js-framework.
