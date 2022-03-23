@@ -290,6 +290,7 @@ void setup()
 {
 Console.println("00");
 //  delay(1000);
+  Wire.begin();
   Serial.begin(9600); //init serial port and set baudrate
   Bridge.begin();
   Console.begin(); 
