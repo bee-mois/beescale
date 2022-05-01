@@ -29,19 +29,19 @@ $datei_pure = fopen("sensorik_pure.csv","a+") or die("Kann die Datei nicht aufma
 	$array_oldline = explode(",",$oldline);	# letzte datenzeile am komma auftrennen und in array speichern
 	$oldlux = $array_oldline[4];			# letzte helligkeit einlesen
 $date = date('Y/m/d H:i:s'); 				# serverzeitstempel abgreifen
-$kiste1 = round($_GET["weight1"], 2);		# variable aus der url einlesen
-$temp = round($_GET["temp1"], 1);			# outside
+$kiste1 = round($_GET["weight1"], 2);		        # variable aus der url einlesen
+$temp = round($_GET["temp1"], 2);			# outside
 $vcc = $_GET["vcc"];
 $v = $vcc/1000;
 $l = $_GET["lux"];
-if ($kiste1 > 0 && $temp < 60)				# auf gewichts- und temmperaturausreißer prüfen
+if ($kiste1 > 0 && $temp < 60 && $temp != 0)		# auf gewichts- und temperaturausreisser pruefen
 {
-if ($l > 65380 && $l < 65546)				# auf lichtausreißer prüfen
+if ($l > 65380 && $l < 65546)				# auf lichtausreisser pruefen
 	{  $l = $oldlux;	}
-//	   $lux = $l * 0.1;						# darstellungsgruende: lux-kurve um faktor 10 gestaucht
+//	   $lux = $l * 0.1;				# darstellungsgruende: lux-kurve um faktor 10 gestaucht
 $lux = 0.5 * round(sqrt($l), 2);			# darstellungsgruende: lux-kurve in quadratwurzel gestaucht und halbiert
 $kiste2 = round($_GET["weight2"], 2);
-$temp01 = round($_GET["temp2"], 1);			# inside
+$temp01 = round($_GET["temp2"], 2);			# inside
 $h1 = $_GET["h1"];
 $t1 = $_GET["t1"];
 $h2 = $_GET["h2"];
@@ -51,7 +51,7 @@ $line_pure = "\n".$date.",".$kiste1.",".$temp.",".$v.",".$l.",".$kiste2.",".$tem
 fwrite($datei_pure, $line_pure);			# unbereinigte daten in sensorik_pure.csv schreiben
 fwrite($datei, $line);	
 echo $date,": addline2.php returns: OK\r\n";# ...und gespeichert.
-fclose($datei);								# datei mit datenreihe schliessen
+fclose($datei);						# datei mit datenreihe schliessen
 fclose($datei_pure);
 # Transmit dataset to hiveeyes
 $data = array("weight hive1" => $kiste1, "temperature hive1" => $t1, "humidity hive1" => $h1, "weight hive2" => $kiste2, "temperature hive2" => $t2, "humidity hive2" => $h2, "temperature outside" => $temp, "temperature inside" => $temp01, "brightness" => $l);
