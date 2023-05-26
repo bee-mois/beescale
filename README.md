@@ -7,10 +7,10 @@ The data source is a sensor node consisting of an [Arduino Uno](https://www.ardu
 
 ### Content of the beescale Repository
 <ul>
-<li>Folder OpenWrt: config and other custom beescale files of <a href="http://www.dragino.com/products/yunshield/item/105-yun-shield-v2-4.html">dragino yun shield's</a> linux component running openwrt.
+<li>deprecated: [Folder OpenWrt: config and other custom beescale files of <a href="http://www.dragino.com/products/yunshield/item/105-yun-shield-v2-4.html">dragino yun shield's</a> linux component running openwrt.
     <ul>
     <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/latest.sh">latest.sh</a>: shell script that produces latest.jpg from most recent date-stamp-named-snapshot of usb webcam driven by mjpg_streamer. 
-    <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/wan-watchdog.sh">wan-watchdog.sh</a>: shell script that checks connection from yun to web server and restarts connections if necessary. run by yun's cron.
+    <li><a href="https://github.com/bee-mois/beescale/blob/master/OpenWrt/wan-watchdog.sh">wan-watchdog.sh</a>: shell script that checks connection from yun to web server and restarts connections if necessary. run by yun's cron.]
     </ul>
 <li>beescale-yun-2022: arduino yun firmware/"sketch". Better get it from the hiveeyes repo: <a href="https://github.com/hiveeyes/arduino/tree/master/node-yun-http">node-yun-http.ino</a>   
 <li>beescale-yun-ds18b20-two_load_cells-dht22-switch-sd-lux-lite: old arduino yun firmware/"sketch" with DHT22 and an ugly hardware workaround based on a relay to reset a sensor pin if that blocks the sketch. kept only for historical reasons (as with the corresponding <a href="https://community.hiveeyes.org/uploads/default/original/2X/8/81da7e7071ffde2d9376e43f5deede5134a74c82.jpeg">wiring hand sketch</a>).
