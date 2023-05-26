@@ -1,0 +1,12 @@
+# /etc/systemd/system/log-geiger.service 
+[Unit]
+Description=Log Multigeiger nach Hiveeyes Service
+Wants=network.target
+
+[Service]
+ExecStart=/bin/bash /home/me/beescale/log-geiger.sh
+Restart=always
+WorkingDirectory=/home/me/beescale
+
+[Install]
+WantedBy=multi-user.target
