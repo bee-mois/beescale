@@ -8,6 +8,6 @@ do
   time=`date --date=@$(date -u "+%s" --date="$time") '+%Y-%m-%dT%H:%M:%S'`
   sv=`echo "$cpm/60*0.081438" | bc -l | awk '{printf("%.3f \n",$1)}'`
   python -c "from log_geiger import send_measurement; send_measurement('yun', '$time', '$cpm', '$sv')"
-  echo $time': Sending CountPerMinute='$cpm', GammaRadiation='$sv'µSv/h ...'
+  echo $time': Sending CountsPerMinute='$cpm', GammaRadiation='$sv'µSv/h ...'
   sleep 130
 done
