@@ -2,7 +2,7 @@ import json
 import os
 import paho.mqtt.client as mqtt
 
-def send_measurement(yun, Timestamp, CountPerMinute, GammaRadiation):
+def send_measurement(yun, Timestamp, CountsPerMinute, GammaRadiation):
 
     # The MQTT host
     mqtt_host = 'swarm.hiveeyes.org'
@@ -23,7 +23,7 @@ def send_measurement(yun, Timestamp, CountPerMinute, GammaRadiation):
     # Define measurement
     measurement = {
         'Timestamp':        Timestamp,
-        'CountPerMinute':   CountPerMinute,
+        'CountsPerMinute':  float(CountsPerMinute),
         'GammaRadiation':   GammaRadiation,
     }
 
