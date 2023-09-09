@@ -1,0 +1,11 @@
+[Unit]
+Description=Copy latest images to latest*.jpg and delete images older than 2 days
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c "while true; do /home/ftp-bee/ftp/latest-jpg.sh; sleep 30; done"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
